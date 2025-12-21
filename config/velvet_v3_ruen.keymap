@@ -103,10 +103,10 @@
 
         nav {
             bindings = <
-&kp ESC         &none         &none       &none         &none       &none                       &kp K_SCROLL_UP    &kp HOME          &kp PAGE_DOWN  &kp PAGE_UP       &kp END                  &kp DELETE
-&kp TAB         &kp K_CUT     &kp K_COPY  &kp K_PASTE   &kp K_UNDO  &kp K_REDO                  &kp BACKSPACE      &kp LEFT          &kp DOWN       &kp UP            &kp RIGHT                &kp DELETE
-&kp LEFT_SHIFT  &kp CAPSLOCK  &none       &none         &none       &none                       &kp K_SCROLL_DOWN  &kp LS(LC(LEFT))  &kp LS(DOWN)   &kp LS(UP)        &kp LS(LC(RIGHT_ARROW))  &kp DELETE
-                              &kp LCTRL   &kp LEFT_ALT  &none       &none       &none    &none  &mo 5              &none             &kp LA(DOWN)   &kp LA(UP_ARROW)
+&kp ESC   &none  &none      &none       &none        &kp K_REDO                  &kp K_SCROLL_UP    &kp HOME          &kp PAGE_DOWN  &kp PAGE_UP       &kp END                  &kp DELETE
+&kp TAB   &none  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO                  &kp BACKSPACE      &kp LEFT          &kp DOWN       &kp UP            &kp RIGHT                &kp DELETE
+&kp CAPS  &none  &none      &none       &none        &none                       &kp K_SCROLL_DOWN  &kp LS(LC(LEFT))  &kp LS(DOWN)   &kp LS(UP)        &kp LS(LC(RIGHT_ARROW))  &kp DELETE
+                 &trans     &trans      &none        &none       &none    &none  &mo 5              &none             &kp LA(DOWN)   &kp LA(UP_ARROW)
             >;
 
             display-name = "nav";
@@ -115,10 +115,10 @@
 
         sym_en {
             bindings = <
-&none  &kp N1  &kp N2         &kp N3            &kp N4          &kp N5                    &kp N6     &kp N7           &kp N8             &kp N9            &kp N0  &none
-&none  &none   &kp BSLH       &kp UNDER         &kp LPAR        &kp SEMI                  &kp COLON  &kp RPAR         &kp EQUAL          &kp FSLH          &none   &none
-&none  &none   &kp AMPERSAND  &kp QMARK         &kp LEFT_BRACE  &kp SQT                   &kp DQT    &kp RIGHT_BRACE  &kp EXCL           &kp PIPE          &none   &none
-               &kp LESS_THAN  &kp LEFT_BRACKET  &none           &mo 5     &none    &none  &none      &none            &kp RIGHT_BRACKET  &kp GREATER_THAN
+&kp  &kp N1  &kp N2            &kp N3         &kp N4     &kp N5                &kp N6    &kp N7     &kp N8            &kp N9             &kp N0  &kp
+&kp  &kp     &kp LEFT_BRACE    &kp LPAR       &kp COLON  &kp SQT               &kp DQT   &kp SEMI   &kp RPAR          &kp RIGHT_BRACE    &kp     &kp
+&kp  &kp     &kp LEFT_BRACKET  &kp LESS_THAN  &kp UNDER  &kp NUBS              &kp FSLH  &kp EQUAL  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp     &kp
+             &kp CARET         &kp MINUS      &kp        &mo 5     &kp    &kp  &kp       &kp        &kp PLUS          &kp ASTRK
             >;
 
             display-name = "Symbols";
@@ -136,9 +136,9 @@
 
         adj {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4     &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE            &kp C_VOL_UP          &kp PRINTSCREEN  &studio_unlock
-&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE      &kp K_NEXT            &none            &none
+&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4  &bt BT_CLR
+&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE            &kp C_VOL_UP          &none         &studio_unlock
+&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE      &kp K_NEXT            &none         &none
                     &none   &none    &none    &none    &none    &none  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
             >;
 
