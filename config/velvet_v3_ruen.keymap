@@ -97,7 +97,7 @@
 &kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE         &kp RU_CYRILLIC_HA
 &kp CAPSLOCK        &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                          &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE        &kp RU_CYRILLIC_E
 &kp LEFT_SHIFT      &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                           &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HARD_SIGN  &kp RIGHT_SHIFT
-                                             &kp LCTRL             &kp LEFT_ALT        &kp DOT             &mo 2               &kp SPACE    &kp ENTER  &mo 4               &kp COMMA                  &kp LEFT_GUI         &none
+                                             &kp LCTRL             &kp LEFT_ALT        &kp RU_DOT          &mo 2               &kp SPACE    &kp ENTER  &mo 4               &kp RU_COMMA               &kp LEFT_GUI         &none
             >;
         };
 
@@ -115,10 +115,10 @@
 
         sym_en {
             bindings = <
-&kp GRAVE  &kp N1         &kp N2            &kp N3         &kp N4     &kp N5                    &kp N6    &kp N7     &kp N8            &kp N9             &kp N0    &kp TILDE
-&kp AT     &kp QMARK      &kp LEFT_BRACE    &kp LPAR       &kp COLON  &kp SQT                   &kp DQT   &kp SEMI   &kp RPAR          &kp RIGHT_BRACE    &kp EXCL  &kp HASH
-&none      &kp AMPERSAND  &kp LEFT_BRACKET  &kp LESS_THAN  &kp UNDER  &kp NUBS                  &kp FSLH  &kp EQUAL  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp PIPE  &kp PRINTSCREEN
-                          &kp CARET         &kp MINUS      &none      &mo 5     &none    &none  &none     &none      &kp PLUS          &kp ASTRK
+&kp GRAVE  &kp N1     &kp N2          &kp N3     &kp N4     &kp N5                    &kp N6    &kp N7     &kp N8    &kp N9           &kp N0    &kp TILDE
+&en AT     &kp QMARK  &kp LEFT_BRACE  &kp LPAR   &kp COLON  &kp SQT                   &kp DQT   &kp SEMI   &kp RPAR  &kp RIGHT_BRACE  &kp EXCL  &kp HASH
+&none      &kp AMPS   &kp LBKT        &kp LT     &kp UNDER  &kp NUBS                  &kp FSLH  &kp EQUAL  &kp GT    &kp RBKT         &kp PIPE  &kp PRINTSCREEN
+                      &kp CARET       &kp MINUS  &none      &mo 5     &none    &none  &none     &none      &kp PLUS  &kp STAR
             >;
 
             display-name = "Symbols";
@@ -127,10 +127,10 @@
         sym_ru {
             display-name = "Sym ru";
             bindings = <
-&kp GRAVE      &kp N1         &kp N2            &kp N3         &kp N4     &kp N5                    &kp N6    &kp N7     &kp N8            &kp N9             &kp N0    &kp TILDE
-&kp AT_SIGN    &kp QMARK      &kp LEFT_BRACE    &kp LPAR       &kp COLON  &kp SQT                   &kp DQT   &kp SEMI   &kp RPAR          &kp RIGHT_BRACE    &kp EXCL  &kp HASH
-&kp RU_NUMERO  &kp AMPERSAND  &kp LEFT_BRACKET  &kp LESS_THAN  &kp UNDER  &kp NUBS                  &kp FSLH  &kp EQUAL  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp PIPE  &kp PRINTSCREEN
-                              &kp CARET         &kp MINUS      &none      &mo 5     &none    &none  &none     &none      &kp PLUS          &kp ASTRK
+&en GRAVE      &kp N1        &kp N2          &kp N3     &kp N4        &kp N5                            &kp N6       &kp N7       &kp N8    &kp N9           &kp N0    &en TILDE
+&kp AT_SIGN    &kp RU_QMARK  &kp LEFT_BRACE  &kp LPAR   &kp RU_COLON  &en SQT                           &kp RU_DQT   &kp RU_SEMI  &kp RPAR  &kp RIGHT_BRACE  &kp EXCL  &en HASH
+&kp RU_NUMERO  &en AMPS      &en LBKT        &en LT     &kp UNDER     &kp RU_BACKSLASH                  &kp RU_FSLH  &kp EQUAL    &en GT    &en RBKT         &en PIPE  &kp PRINTSCREEN
+                             &en CARET       &kp MINUS  &none         &mo 5             &none    &none  &none        &none        &kp PLUS  &kp STAR
             >;
         };
 
