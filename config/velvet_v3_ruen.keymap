@@ -103,10 +103,10 @@
 
         nav {
             bindings = <
-&kp ESC  &none  &none      &none       &none        &kp K_REDO                  &kp K_SCROLL_UP    &kp HOME          &kp PAGE_DOWN  &kp PAGE_UP       &kp END                  &kp DELETE
-&kp TAB  &none  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO                  &kp BACKSPACE      &kp LEFT          &kp DOWN       &kp UP            &kp RIGHT                &kp DELETE
-&none    &none  &none      &none       &none        &none                       &kp K_SCROLL_DOWN  &kp LS(LC(LEFT))  &kp LS(DOWN)   &kp LS(UP)        &kp LS(LC(RIGHT_ARROW))  &kp DELETE
-                &none      &none       &none        &none       &none    &none  &mo 5              &none             &kp LA(DOWN)   &kp LA(UP_ARROW)
+&kp ESC         &none  &none      &none       &none        &kp K_REDO                  &kp K_SCROLL_UP    &kp HOME          &kp PAGE_DOWN  &kp PAGE_UP       &kp END                  &kp DELETE
+&kp TAB         &none  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO                  &kp BACKSPACE      &kp LEFT          &kp DOWN       &kp UP            &kp RIGHT                &kp DELETE
+&kp LEFT_SHIFT  &none  &none      &none       &none        &none                       &kp K_SCROLL_DOWN  &kp LS(LC(LEFT))  &kp LS(DOWN)   &kp LS(UP)        &kp LS(LC(RIGHT_ARROW))  &kp RIGHT_SHIFT
+                       &none      &none       &none        &none       &none    &none  &mo 5              &none             &kp LA(DOWN)   &kp LA(UP_ARROW)
             >;
 
             display-name = "nav";
@@ -115,9 +115,9 @@
 
         sym_en {
             bindings = <
-&kp GRAVE  &kp N1     &kp N2          &kp N3     &kp N4     &kp N5                    &kp N6    &kp N7     &kp N8    &kp N9           &kp N0    &kp TILDE
+&kp GRAVE  &kp N1     &kp N2          &kp N3     &kp N4     &kp N5                    &kp N6    &kp N7     &kp N8    &kp N9           &kp N0    &kp PRINTSCREEN
 &en AT     &kp QMARK  &kp LEFT_BRACE  &kp LPAR   &kp COLON  &kp SQT                   &kp DQT   &kp SEMI   &kp RPAR  &kp RIGHT_BRACE  &kp EXCL  &kp HASH
-&none      &kp AMPS   &kp LBKT        &kp LT     &kp UNDER  &kp NUBS                  &kp FSLH  &kp EQUAL  &kp GT    &kp RBKT         &kp PIPE  &kp PRINTSCREEN
+&kp TILDE  &kp AMPS   &kp LBKT        &kp LT     &kp UNDER  &kp NUBS                  &kp FSLH  &kp EQUAL  &kp GT    &kp RBKT         &kp PIPE  &none
                       &kp CARET       &kp MINUS  &none      &mo 5     &none    &none  &none     &none      &kp PLUS  &kp STAR
             >;
 
@@ -127,19 +127,19 @@
         sym_ru {
             display-name = "Sym ru";
             bindings = <
-&en GRAVE      &kp N1        &kp N2          &kp N3     &kp N4        &kp N5                            &kp N6       &kp N7       &kp N8    &kp N9           &kp N0    &en TILDE
-&kp AT_SIGN    &kp RU_QMARK  &kp LEFT_BRACE  &kp LPAR   &kp RU_COLON  &en SQT                           &kp RU_DQT   &kp RU_SEMI  &kp RPAR  &kp RIGHT_BRACE  &kp EXCL  &en HASH
-&kp RU_NUMERO  &en AMPS      &en LBKT        &en LT     &kp UNDER     &kp RU_BACKSLASH                  &kp RU_FSLH  &kp EQUAL    &en GT    &en RBKT         &en PIPE  &kp PRINTSCREEN
-                             &en CARET       &kp MINUS  &none         &mo 5             &none    &none  &none        &none        &kp PLUS  &kp STAR
+&en GRAVE    &kp N1        &kp N2          &kp N3     &kp N4        &kp N5                            &kp N6       &kp N7       &kp N8    &kp N9           &kp N0    &en PRINTSCREEN
+&kp AT_SIGN  &kp RU_QMARK  &kp LEFT_BRACE  &kp LPAR   &kp RU_COLON  &en SQT                           &kp RU_DQT   &kp RU_SEMI  &kp RPAR  &kp RIGHT_BRACE  &kp EXCL  &en HASH
+&kp TILDE    &en AMPS      &en LBKT        &en LT     &kp UNDER     &kp RU_BACKSLASH                  &kp RU_FSLH  &kp EQUAL    &en GT    &en RBKT         &en PIPE  &kp RU_NUMERO
+                           &en CARET       &kp MINUS  &none         &mo 5             &none    &none  &none        &none        &kp PLUS  &kp STAR
             >;
         };
 
         adj {
             bindings = <
-&bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4  &bt BT_CLR
-&none        &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE            &kp C_VOL_UP          &none         &studio_unlock
-&none        &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE      &kp K_NEXT            &none         &none
-                    &none   &none    &none    &none    &none    &none  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&bootloader     &none  &kp F1  &kp F2   &kp F3   &kp F4                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4  &bt BT_CLR
+&none           &none  &kp F5  &kp F6   &kp F7   &kp F8                   &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE            &kp C_VOL_UP          &none         &studio_unlock
+&kp LEFT_SHIFT  &none  &kp F9  &kp F10  &kp F11  &kp F12                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE      &kp K_NEXT            &none         &kp RIGHT_SHIFT
+                       &none   &none    &none    &none    &none    &none  &none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
             >;
 
             display-name = "Adjust";
