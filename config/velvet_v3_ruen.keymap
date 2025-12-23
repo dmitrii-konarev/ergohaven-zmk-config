@@ -103,10 +103,10 @@
 
         nav {
             bindings = <
-&kp ESC         &none             &kp LA(DOWN)      &kp LA(UP)      &none              &kp K_CUT                    &none          &kp HOME      &kp PAGE_DOWN       &kp PAGE_UP  &kp END              &kp PRINTSCREEN
-&kp TAB         &kp LS(LEFT)      &kp LS(LA(DOWN))  &kp LS(LA(UP))  &kp LS(RIGHT)      &kp K_COPY                   &kp BACKSPACE  &kp LEFT      &kp DOWN            &kp UP       &kp RIGHT            &kp DELETE
-&kp LEFT_SHIFT  &kp LS(LC(LEFT))  &kp LS(DOWN)      &kp LS(UP)      &kp LS(LC(RIGHT))  &kp K_PASTE                  &none          &kp LC(LEFT)  &kp LC(DOWN_ARROW)  &kp LC(UP)   &kp LC(RIGHT_ARROW)  &kp RIGHT_SHIFT
-                                  &kp LCTRL         &kp LEFT_ALT    &none              &none        &none    &none  &mo 5          &none         &kp K_UNDO          &kp K_REDO
+&kp ESC         &none             &kp LA(DOWN)      &kp LA(UP)      &none              &none                  &none          &kp HOME      &kp PAGE_DOWN       &kp PAGE_UP  &kp END              &kp PRINTSCREEN
+&kp TAB         &kp LS(LEFT)      &kp LS(LA(DOWN))  &kp LS(LA(UP))  &kp LS(RIGHT)      &none                  &kp BACKSPACE  &kp LEFT      &kp DOWN            &kp UP       &kp RIGHT            &kp DELETE
+&kp LEFT_SHIFT  &kp LS(LC(LEFT))  &kp LS(DOWN)      &kp LS(UP)      &kp LS(LC(RIGHT))  &none                  &none          &kp LC(LEFT)  &kp LC(DOWN_ARROW)  &kp LC(UP)   &kp LC(RIGHT_ARROW)  &kp RIGHT_SHIFT
+                                  &kp LCTRL         &kp LEFT_ALT    &none              &none  &none    &none  &mo 5          &none         &none               &none
             >;
 
             display-name = "nav";
