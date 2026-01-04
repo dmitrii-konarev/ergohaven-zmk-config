@@ -85,7 +85,7 @@
 &kp ESC         &kp Q  &kp W      &kp E         &kp R      &kp T                          &kp Y  &kp U    &kp I         &kp O         &kp P     &kp LBKT
 &kp TAB         &kp A  &kp S      &kp D         &kp F      &kp G                          &kp H  &kp J    &kp K         &kp L         &kp SEMI  &kp APOS
 &kp LEFT_SHIFT  &kp Z  &kp X      &kp C         &kp V      &kp B                          &kp N  &kp M    &kp COMMA     &kp DOT       &kp FSLH  &kp RIGHT_SHIFT
-                       &kp LCTRL  &kp LEFT_ALT  &kp COMMA  &mo 2  &kp SPACE    &kp ENTER  &mo 3  &kp DOT  &kp LEFT_GUI  &kp CAPSLOCK
+                       &kp LCTRL  &kp LEFT_ALT  &kp COMMA  &mo 2  &kp SPACE    &kp ENTER  &mo 4  &kp DOT  &kp LEFT_GUI  &kp CAPSLOCK
             >;
 
             display-name = "Base";
@@ -97,28 +97,16 @@
 &kp ESC         &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE         &kp RU_CYRILLIC_HA
 &kp TAB         &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE        &kp RU_CYRILLIC_E
 &kp LEFT_SHIFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                          &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HARD_SIGN  &kp RIGHT_SHIFT
-                                         &kp LCTRL             &kp LEFT_ALT        &kp RU_COMMA        &mo 2                              &kp SPACE    &kp ENTER  &mo 4               &kp RU_DOT                 &kp LEFT_GUI         &kp CAPSLOCK
+                                         &kp LCTRL             &kp LEFT_ALT        &kp RU_COMMA        &mo 3                              &kp SPACE    &kp ENTER  &mo 4               &kp RU_DOT                 &kp LEFT_GUI         &kp CAPSLOCK
             >;
-        };
-
-        nav {
-            bindings = <
-&kp ESC         &kp LS(HOME)      &kp LA(DOWN)      &kp LA(UP)      &kp LS(END)        &none                  &none          &kp HOME      &kp PAGE_DOWN       &kp PAGE_UP   &kp END              &kp PRINTSCREEN
-&kp TAB         &kp LS(LEFT)      &kp LS(LA(DOWN))  &kp LS(LA(UP))  &kp LS(RIGHT)      &none                  &kp BACKSPACE  &kp LEFT      &kp DOWN            &kp UP        &kp RIGHT            &kp DELETE
-&kp LEFT_SHIFT  &kp LS(LC(LEFT))  &kp LS(DOWN)      &kp LS(UP)      &kp LS(LC(RIGHT))  &none                  &none          &kp LC(LEFT)  &kp LC(DOWN_ARROW)  &kp LC(UP)    &kp LC(RIGHT_ARROW)  &kp RIGHT_SHIFT
-                                  &kp LCTRL         &kp LEFT_ALT    &none              &none  &none    &none  &mo 5          &none         &kp LEFT_GUI        &kp CAPSLOCK
-            >;
-
-            display-name = "nav";
-            label = "Navigation";
         };
 
         sym_en {
             bindings = <
-&kp GRAVE  &kp N1     &kp N2          &kp N3     &kp N4         &kp N5                      &kp N6    &kp N7     &kp N8    &kp N9           &kp N0    &kp PRINTSCREEN
-&kp AT     &kp QMARK  &kp LEFT_BRACE  &kp LPAR   &kp SEMICOLON  &kp SQT                     &kp DQT   &kp COLON  &kp RPAR  &kp RIGHT_BRACE  &kp EXCL  &kp HASH
-&kp TILDE  &kp AMPS   &kp LBKT        &kp LT     &kp UNDER      &kp NUBS                    &kp FSLH  &kp EQUAL  &kp GT    &kp RBKT         &kp PIPE  &trans
-                      &kp CARET       &kp MINUS  &trans         &mo 5     &trans    &trans  &none     &trans     &kp PLUS  &kp STAR
+&kp GRAVE  &kp N1     &kp N2          &kp N3     &kp N4         &kp N5                    &kp N6    &kp N7     &kp N8    &kp N9           &kp N0    &kp PRINTSCREEN
+&kp AT     &kp QMARK  &kp LEFT_BRACE  &kp LPAR   &kp SEMICOLON  &kp SQT                   &kp DQT   &kp COLON  &kp RPAR  &kp RIGHT_BRACE  &kp EXCL  &kp HASH
+&kp TILDE  &kp AMPS   &kp LBKT        &kp LT     &kp UNDER      &kp NUBS                  &kp FSLH  &kp EQUAL  &kp GT    &kp RBKT         &kp PIPE  &trans
+                      &kp CARET       &kp MINUS  &none          &none     &none    &none  &mo 5     &none      &kp PLUS  &kp STAR
             >;
 
             display-name = "Symbols";
@@ -127,11 +115,23 @@
         sym_ru {
             display-name = "Sym ru";
             bindings = <
-&en GRAVE    &kp N1        &kp N2          &kp N3     &kp N4            &kp N5                              &kp N6       &kp N7        &kp N8    &kp N9           &kp N0    &en PRINTSCREEN
-&en AT_SIGN  &kp RU_QMARK  &en LEFT_BRACE  &kp LPAR   &kp RU_SEMICOLON  &en SQT                             &kp RU_DQT   &kp RU_COLON  &kp RPAR  &en RIGHT_BRACE  &kp EXCL  &en HASH
-&en TILDE    &en AMPS      &en LBKT        &en LT     &kp UNDER         &kp RU_BACKSLASH                    &kp RU_FSLH  &kp EQUAL     &en GT    &en RBKT         &en PIPE  &kp RU_NUMERO
-                           &en CARET       &kp MINUS  &trans            &mo 5             &trans    &trans  &none        &trans        &kp PLUS  &kp STAR
+&en GRAVE    &kp N1        &kp N2          &kp N3     &kp N4            &kp N5                            &kp N6       &kp N7        &kp N8    &kp N9           &kp N0    &en PRINTSCREEN
+&en AT_SIGN  &kp RU_QMARK  &en LEFT_BRACE  &kp LPAR   &kp RU_SEMICOLON  &en SQT                           &kp RU_DQT   &kp RU_COLON  &kp RPAR  &en RIGHT_BRACE  &kp EXCL  &en HASH
+&en TILDE    &en AMPS      &en LBKT        &en LT     &kp UNDER         &kp RU_BACKSLASH                  &kp RU_FSLH  &kp EQUAL     &en GT    &en RBKT         &en PIPE  &kp RU_NUMERO
+                           &en CARET       &kp MINUS  &none             &none             &none    &none  &mo 5        &none         &kp PLUS  &kp STAR
             >;
+        };
+
+        nav {
+            bindings = <
+&kp ESC         &kp LS(HOME)      &kp LA(DOWN)      &kp LA(UP)      &kp LS(END)        &none                  &none          &kp HOME      &kp PAGE_DOWN       &kp PAGE_UP   &kp END              &kp PRINTSCREEN
+&kp TAB         &kp LS(LEFT)      &kp LS(LA(DOWN))  &kp LS(LA(UP))  &kp LS(RIGHT)      &none                  &kp BACKSPACE  &kp LEFT      &kp DOWN            &kp UP        &kp RIGHT            &kp DELETE
+&kp LEFT_SHIFT  &kp LS(LC(LEFT))  &kp LS(DOWN)      &kp LS(UP)      &kp LS(LC(RIGHT))  &none                  &none          &kp LC(LEFT)  &kp LC(DOWN_ARROW)  &kp LC(UP)    &kp LC(RIGHT_ARROW)  &kp RIGHT_SHIFT
+                                  &kp LCTRL         &kp LEFT_ALT    &none              &mo 5  &none    &none  &none          &none         &kp LEFT_GUI        &kp CAPSLOCK
+            >;
+
+            display-name = "nav";
+            label = "Navigation";
         };
 
         adj {
@@ -139,7 +139,7 @@
 &kp F1          &kp F2  &kp F3        &kp F4            &kp F5        &kp F6                                &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
 &kp TAB         &none   &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &kp C_BRIGHTNESS_INC                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &studio_unlock
 &kp LEFT_SHIFT  &none   &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &kp C_BRIGHTNESS_DEC                  &out OUT_BLE  &out OUT_USB  &none         &none         &bt BT_CLR    &kp RIGHT_SHIFT
-                        &kp LCTRL     &kp LEFT_ALT      &none         &none                 &none    &none  &none         &none         &none         &none
+                        &kp LCTRL     &kp LEFT_ALT      &none         &none                 &none    &none  &none         &none         &kp LGUI      &kp CAPSLOCK
             >;
 
             display-name = "Adjust";
