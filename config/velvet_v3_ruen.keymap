@@ -109,10 +109,10 @@
 
         sym_en {
             bindings = <
-&kp GRAVE  &kp N1     &kp N2          &kp N3     &kp N4          &kp N5                    &kp N6    &kp N7           &kp N8    &kp N9           &kp N0    &none
-&kp AT     &kp QMARK  &kp LEFT_BRACE  &kp LPAR   &kp SEMICOLON   &kp SQT                   &kp DQT   &kp COLON        &kp RPAR  &kp RIGHT_BRACE  &kp EXCL  &kp HASH
-&kp TILDE  &kp AMPS   &kp LBKT        &kp LT     &kp UNDER       &kp NUBS                  &kp FSLH  &kp EQUAL        &kp GT    &kp RBKT         &kp PIPE  &none
-                      &kp CARET       &kp MINUS  &kp LEFT_SHIFT  &none     &none    &none  &mo 5     &kp RIGHT_SHIFT  &kp PLUS  &kp STAR
+&kp GRAVE  &kp N1    &kp N2        &kp N3     &kp N4          &kp N5                    &kp N6    &kp N7           &kp N8     &kp N9    &kp N0    &none
+&kp AT     &kp LT    &kp LBKT      &kp LBRC   &kp LPAR        &kp SQT                   &kp DQT   &kp RPAR         &kp RBRC   &kp RBKT  &kp GT    &kp HASH
+&kp TILDE  &kp AMPS  &kp CARET     &kp MINUS  &kp UNDER       &kp NUBS                  &kp FSLH  &kp EQUAL        &kp PLUS   &kp STAR  &kp PIPE  &none
+                     &kp LEFT_GUI  &none      &kp LEFT_SHIFT  &none     &none    &none  &mo 5     &kp RIGHT_SHIFT  &kp QMARK  &kp EXCL
             >;
 
             display-name = "Symbols";
@@ -121,10 +121,10 @@
         sym_ru {
             display-name = "Sym ru";
             bindings = <
-&en GRAVE    &kp N1        &kp N2          &kp N3     &kp N4            &kp N5                            &kp N6       &kp N7           &kp N8    &kp N9           &kp N0    &none
-&en AT_SIGN  &kp RU_QMARK  &en LEFT_BRACE  &kp LPAR   &kp RU_SEMICOLON  &en SQT                           &kp RU_DQT   &kp RU_COLON     &kp RPAR  &en RIGHT_BRACE  &kp EXCL  &en HASH
-&en TILDE    &en AMPS      &en LBKT        &en LT     &kp UNDER         &kp RU_BACKSLASH                  &kp RU_FSLH  &kp EQUAL        &en GT    &en RBKT         &en PIPE  &kp RU_NUMERO
-                           &en CARET       &kp MINUS  &kp LEFT_SHIFT    &none             &none    &none  &mo 5        &kp RIGHT_SHIFT  &kp PLUS  &kp STAR
+&en GRAVE    &kp N1    &kp N2        &kp N3     &kp N4          &kp N5                            &kp N6       &kp N7           &kp N8     &kp N9    &kp N0    &none
+&en AT_SIGN  &en LT    &en LBKT      &en LBRC   &kp LPAR        &en SQT                           &kp RU_DQT   &kp RPAR         &en RBRC   &en RBKT  &en GT    &en HASH
+&en TILDE    &en AMPS  &en CARET     &kp MINUS  &kp UNDER       &kp RU_BACKSLASH                  &kp RU_FSLH  &kp EQUAL        &en PLUS   &kp STAR  &en PIPE  &kp RU_NUMERO
+                       &kp LEFT_GUI  &none      &kp LEFT_SHIFT  &none             &none    &none  &mo 5        &kp RIGHT_SHIFT  &kp QMARK  &kp EXCL
             >;
         };
 
