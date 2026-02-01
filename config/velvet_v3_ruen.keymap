@@ -102,17 +102,17 @@
             bindings = <
 &kp TAB    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_IO RU_CYRILLIC_IE                          &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA   &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE         &kp RU_CYRILLIC_HA
 &kp CAPS   &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                                         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL    &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE        &kp RU_CYRILLIC_E
-&kp LCTRL  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                          &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE    &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HARD_SIGN  &kp RIGHT_SHIFT
+&kp LCTRL  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                                          &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE    &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HARD_SIGN  &none
                                     &kp LEFT_GUI          &kp LEFT_ALT        &kp LEFT_SHIFT      &mo 3                              &kp SPACE    &kp ENTER  &mo 4               &kp RIGHT_SHIFT            &mt RU_SEMI RU_COMMA  &mt RU_COLON RU_DOT
             >;
         };
 
         sym_en {
             bindings = <
-&kp GRAVE  &kp N1    &kp N2        &kp N3     &kp N4          &kp N5                    &kp N6    &kp N7           &kp N8     &kp N9    &kp N0    &none
-&kp AT     &kp LT    &kp LBKT      &kp LBRC   &kp LPAR        &kp SQT                   &kp DQT   &kp RPAR         &kp RBRC   &kp RBKT  &kp GT    &kp HASH
-&kp TILDE  &kp AMPS  &kp CARET     &kp MINUS  &kp UNDER       &kp NUBS                  &kp FSLH  &kp EQUAL        &kp PLUS   &kp STAR  &kp PIPE  &none
-                     &kp LEFT_GUI  &none      &kp LEFT_SHIFT  &none     &none    &none  &mo 5     &kp RIGHT_SHIFT  &kp QMARK  &kp EXCL
+&kp GRAVE  &kp N1    &kp N2        &kp N3        &kp N4          &kp N5                    &kp N6    &kp N7           &kp N8     &kp N9      &kp N0         &kp CARET
+&kp AT     &kp LBKT  &kp RBKT      &kp LPAR      &kp RPAR        &kp SQT                   &kp DQT   &kp EQUAL        &kp PLUS   &kp MINUS   &kp ASTRK      &kp PRCNT
+&kp HASH   &kp LT    &kp GT        &kp LBRC      &kp RBRC        &kp NUBS                  &kp FSLH  &kp UNDER        &kp PIPE   &kp DOLLAR  &kp AMPERSAND  &none
+                     &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &none     &none    &none  &mo 5     &kp RIGHT_SHIFT  &kp QMARK  &kp EXCL
             >;
 
             display-name = "Symbols";
@@ -121,10 +121,10 @@
         sym_ru {
             display-name = "Sym ru";
             bindings = <
-&en GRAVE    &kp N1    &kp N2        &kp N3     &kp N4          &kp N5                            &kp N6       &kp N7           &kp N8        &kp N9    &kp N0    &none
-&en AT_SIGN  &en LT    &en LBKT      &en LBRC   &kp LPAR        &en SQT                           &kp RU_DQT   &kp RPAR         &en RBRC      &en RBKT  &en GT    &en HASH
-&en TILDE    &en AMPS  &en CARET     &kp MINUS  &kp UNDER       &kp RU_BACKSLASH                  &kp RU_FSLH  &kp EQUAL        &en PLUS      &kp STAR  &en PIPE  &kp RU_NUMERO
-                       &kp LEFT_GUI  &none      &kp LEFT_SHIFT  &none             &none    &none  &mo 5        &kp RIGHT_SHIFT  &kp RU_QMARK  &kp EXCL
+&en GRAVE    &kp N1    &kp N2        &kp N3        &kp N4          &kp N5                            &kp N6       &kp N7           &kp N8        &kp N9      &kp N0         &en CARET
+&en AT_SIGN  &en LBKT  &en RBKT      &kp LPAR      &kp RPAR        &en SQT                           &kp RU_DQT   &kp EQUAL        &kp PLUS      &kp MINUS   &kp ASTRK      &kp PRCNT
+&en HASH     &en LT    &en GT        &en LBRC      &en RBRC        &kp RU_BACKSLASH                  &kp RU_FSLH  &kp UNDER        &en PIPE      &en DOLLAR  &en AMPERSAND  &kp RU_NUMERO
+                       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &none             &none    &none  &mo 5        &kp RIGHT_SHIFT  &kp RU_QMARK  &kp EXCL
             >;
         };
 
