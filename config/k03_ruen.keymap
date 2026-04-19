@@ -91,11 +91,11 @@
 
         en {
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3    &kp N4         &kp N5                           &kp N6  &kp N7      &kp N8     &kp N9         &kp N0             &kp GRAVE
-&kp TAB    &kp Q   &kp W     &kp E     &kp R          &kp T                            &kp Y   &kp U       &kp I      &kp O          &kp P              &kp LEFT_BRACKET
-&kp LCTRL  &kp A   &kp S     &kp D     &kp F          &kp G                            &kp H   &kp J       &kp K      &kp L          &kp SEMI           &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V          &kp B   &kp K_PP     &kp C_MUTE  &kp N   &kp M       &kp COMMA  &kp DOT        &kp RIGHT_BRACKET  &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp BACKSPACE  &mo 2   &kp SPACE    &kp ENTER   &mo 3   &kp DELETE  &kp FSLH   &kp BACKSLASH
+&kp ESC    &kp N1  &kp N2    &kp N3    &kp N4         &kp N5                           &kp N6  &kp N7      &kp N8     &kp N9    &kp N0             &kp GRAVE
+&kp TAB    &kp Q   &kp W     &kp E     &kp R          &kp T                            &kp Y   &kp U       &kp I      &kp O     &kp P              &kp LEFT_BRACKET
+&kp LCTRL  &kp A   &kp S     &kp D     &kp F          &kp G                            &kp H   &kp J       &kp K      &kp L     &kp SEMI           &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V          &kp B   &kp K_PP     &kp C_MUTE  &kp N   &kp M       &kp COMMA  &kp DOT   &kp RIGHT_BRACKET  &kp RSHFT
+                   &kp LGUI  &kp LALT  &kp BACKSPACE  &mo 2   &kp SPACE    &kp ENTER   &mo 3   &kp DELETE  &kp FSLH   &kp BSLH
             >;
 
             display-name = "Base";
@@ -116,23 +116,26 @@
 
         nav {
             bindings = <
-&kp F1  &kp F2    &kp F3    &kp F4     &kp F5     &kp F6                  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&none   &kp HOME  &kp UP    &kp END    &kp PG_UP  &none                   &none   &none   &none   &none    &none    &none
-&none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none                   &none   &none   &none   &none    &none    &none
-&none   &none     &none     &none      &none      &none   &none    &none  &none   &none   &none   &none    &none    &none
-                  &none     &none      &none      &none   &none    &none  &mo 5   &none   &none   &none
+&kp F1  &kp F2  &kp F3    &kp F4    &kp F5     &kp F6                       &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &none   &kp HOME  &kp UP    &kp END    &kp PG_UP                    &none   &none   &none   &none    &none    &none
+&trans  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                    &none   &none   &none   &none    &none    &none
+&trans  &none   &none     &none     &none      &none      &none     &none   &none   &none   &none   &none    &none    &none
+                &trans    &trans    &trans     &trans     &trans    &trans  &mo 5   &trans  &none   &none
             >;
 
             display-name = "Nav";
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         sym_en {
             bindings = <
-&trans  &trans     &kp AT    &kp DLLR   &kp HASH  &trans                       &trans     &trans    &kp CARET  &trans    &trans    &trans
-&trans  &trans     &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &trans     &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
-&trans  &kp BSLH   &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &kp QUESTION
-&trans  &kp COMMA  &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &kp DOT   &trans
-                   &trans    &trans     &trans    &mo 5      &trans    &trans  &trans     &trans    &trans     &trans
+&kp  &kp  &kp  &kp LESS_THAN         &kp GREATER_THAN       &kp CARET                     &kp                &kp              &kp            &kp       &kp  &kp
+&kp  &kp  &kp  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE              &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION   &kp       &kp  &kp
+&kp  &kp  &kp  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                      &kp EQUAL          &kp DOT          &kp SEMICOLON  &kp       &kp  &kp
+&kp  &kp  &kp  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS         &kp    &kp  &kp UNDER          &kp COMMA        &kp COLON      &kp       &kp  &kp
+          &kp  &kp                   &kp                    &mo 5             &kp    &kp  &kp                &kp              &kp FSLH       &kp BSLH
             >;
 
             display-name = "Symbols";
