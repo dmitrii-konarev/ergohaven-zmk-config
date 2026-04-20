@@ -131,11 +131,11 @@
 
         sym_en {
             bindings = <
-&kp  &kp  &kp  &kp LESS_THAN         &kp GREATER_THAN       &kp CARET                     &kp                &kp              &kp            &kp       &kp  &kp
-&kp  &kp  &kp  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE              &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp QUESTION   &kp       &kp  &kp
-&kp  &kp  &kp  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS                      &kp EQUAL          &kp DOT          &kp SEMICOLON  &kp       &kp  &kp
-&kp  &kp  &kp  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS         &kp    &kp  &kp UNDER          &kp COMMA        &kp COLON      &kp       &kp  &kp
-          &kp  &kp                   &kp                    &mo 5             &kp    &kp  &kp                &kp              &kp FSLH       &kp BSLH
+&none  &none          &none             &none           &none                 &kp BACKSLASH                   &kp PERCENT  &none                  &none            &none              &none             &none
+&none  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK                    &kp SLASH    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
+&none  &kp POUND      &kp EXCLAMATION   &kp DOT         &kp COLON             &kp UNDERSCORE                  &kp EQUAL    &kp SEMICOLON          &kp COMMA        &kp QUESTION       &kp CARET         &none
+&none  &kp TILDE      &kp AMPERSAND     &kp AT_SIGN     &kp SINGLE_QUOTE      &kp PLUS        &none    &none  &kp MINUS    &kp DOUBLE_QUOTES      &kp DOLLAR       &kp PIPE           &kp GRAVE         &none
+                      &none             &none           &none                 &mo 5           &none    &none  &none        &none                  &none            &none
             >;
 
             display-name = "Symbols";
