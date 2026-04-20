@@ -144,11 +144,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&trans  &trans        &en AT        &en DLLR      &en HASH     &trans                           &trans          &trans    &en CARET    &trans    &trans      &trans
-&trans  &trans        &en LT        &kp EQUAL     &en GT       &en GRAVE                        &trans          &en LBKT  &kp UNDER    &en RBKT  &trans      &trans
-&trans  &kp RU_BSLH   &kp LPAR      &kp MINUS     &kp RPAR     &kp PLUS                         &kp RU_PERCENT  &en LBRC  &kp RU_SEMI  &en RBRC  &kp EXCL    &kp RU_QUESTION
-&trans  &kp RU_COMMA  &kp RU_ASTRK  &kp RU_COLON  &kp RU_FSLH  &kp RU_NUMERO  &trans    &trans  &trans          &en PIPE  &en TILDE    &en AMPS  &kp RU_DOT  &trans
-                      &trans        &trans        &trans       &mo 5          &trans    &trans  &trans          &trans    &trans       &trans
+&none  &none          &none               &none           &none                    &kp RU_BACKSLASH                   &kp RU_PERCENT  &none                     &none            &none              &none             &none
+&none  &en LESS_THAN  &en LEFT_BRACKET    &en LEFT_BRACE  &kp RU_LEFT_PARENTHESIS  &kp RU_ASTERISK                    &kp RU_SLASH    &kp RU_RIGHT_PARENTHESIS  &en RIGHT_BRACE  &en RIGHT_BRACKET  &en GREATER_THAN  &none
+&none  &en POUND      &kp RU_EXCLAMATION  &kp RU_DOT      &kp RU_COLON             &kp RU_UNDERSCORE                  &kp RU_EQUAL    &kp RU_SEMICOLON          &kp RU_COMMA     &kp RU_QUESTION    &en CARET         &none
+&none  &en TILDE      &en AMPERSAND       &en AT_SIGN     &en SINGLE_QUOTE         &kp RU_PLUS        &none    &none  &kp RU_MINUS    &kp RU_DOUBLE_QUOTES      &en DOLLAR       &en PIPE           &en GRAVE         &none
+                      &none               &none           &none                    &mo 5              &none    &none  &none           &none                     &none            &none
             >;
         };
 
