@@ -116,11 +116,11 @@
 
         nav {
             bindings = <
-&kp F1  &kp F2  &kp F3    &kp F4    &kp F5     &kp F6                       &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &none   &kp HOME  &kp UP    &kp END    &kp PG_UP                    &none   &none   &none   &none    &none    &none
-&trans  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                    &none   &none   &none   &none    &none    &none
-&trans  &none   &none     &none     &none      &none      &none     &none   &none   &none   &none   &none    &none    &none
-                &trans    &trans    &trans     &trans     &trans    &trans  &mo 5   &trans  &none   &none
+&kp F1      &kp F2  &kp F3    &kp F4    &kp F5     &kp F6                     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp TAB     &none   &kp HOME  &kp UP    &kp END    &kp PG_UP                  &none   &none   &none   &none    &none    &none
+&kp LCTRL   &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN                  &none   &none   &none   &none    &none    &none
+&kp LSHIFT  &none   &none     &none     &none      &none      &none    &none  &none   &none   &none   &none    &none    &none
+                    &kp LGUI  &kp LALT  &none      &none      &none    &none  &mo 5   &none   &none   &none
             >;
 
             display-name = "Nav";
@@ -131,11 +131,11 @@
 
         sym_en {
             bindings = <
-&none          &none          &none             &none           &none                 &kp BACKSLASH                   &kp PERCENT  &none                  &none            &none              &none             &none
-&none          &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK                    &kp SLASH    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
-&kp RU_NUMERO  &kp POUND      &kp EXCLAMATION   &kp DOT         &kp COLON             &kp UNDERSCORE                  &kp EQUAL    &kp SEMICOLON          &kp COMMA        &kp QUESTION       &kp CARET         &none
-&none          &kp TILDE      &kp AMPERSAND     &kp AT_SIGN     &kp SINGLE_QUOTE      &kp PLUS        &none    &none  &kp MINUS    &kp DOUBLE_QUOTES      &kp DOLLAR       &kp PIPE           &kp GRAVE         &none
-                              &none             &none           &none                 &mo 5           &none    &none  &none        &none                  &none            &none
+&none  &none          &none             &none           &none                 &kp BACKSLASH                   &kp PERCENT  &none                  &none            &none              &none             &none
+&none  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK                    &kp SLASH    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
+&none  &kp POUND      &kp EXCLAMATION   &kp DOT         &kp COLON             &kp UNDERSCORE                  &kp EQUAL    &kp SEMICOLON          &kp COMMA        &kp QUESTION       &kp CARET         &none
+&none  &kp TILDE      &kp AMPERSAND     &kp AT_SIGN     &kp SINGLE_QUOTE      &kp PLUS        &none    &none  &kp MINUS    &kp DOUBLE_QUOTES      &kp DOLLAR       &kp PIPE           &kp GRAVE         &none
+                      &none             &none           &none                 &mo 5           &none    &none  &none        &none                  &none            &none
             >;
 
             display-name = "Symbols";
@@ -144,21 +144,21 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&none  &none          &none               &none           &none                    &kp RU_BACKSLASH                   &kp RU_PERCENT  &none                     &none            &none              &none             &none
-&none  &en LESS_THAN  &en LEFT_BRACKET    &en LEFT_BRACE  &kp RU_LEFT_PARENTHESIS  &kp RU_ASTERISK                    &kp RU_SLASH    &kp RU_RIGHT_PARENTHESIS  &en RIGHT_BRACE  &en RIGHT_BRACKET  &en GREATER_THAN  &none
-&none  &en POUND      &kp RU_EXCLAMATION  &kp RU_DOT      &kp RU_COLON             &kp RU_UNDERSCORE                  &kp RU_EQUAL    &kp RU_SEMICOLON          &kp RU_COMMA     &kp RU_QUESTION    &en CARET         &none
-&none  &en TILDE      &en AMPERSAND       &en AT_SIGN     &en SINGLE_QUOTE         &kp RU_PLUS        &none    &none  &kp RU_MINUS    &kp RU_DOUBLE_QUOTES      &en DOLLAR       &en PIPE           &en GRAVE         &none
-                      &none               &none           &none                    &mo 5              &none    &none  &none           &none                     &none            &none
+&none          &none          &none               &none           &none                    &kp RU_BACKSLASH                   &kp RU_PERCENT  &none                     &none            &none              &none             &none
+&none          &en LESS_THAN  &en LEFT_BRACKET    &en LEFT_BRACE  &kp RU_LEFT_PARENTHESIS  &kp RU_ASTERISK                    &kp RU_SLASH    &kp RU_RIGHT_PARENTHESIS  &en RIGHT_BRACE  &en RIGHT_BRACKET  &en GREATER_THAN  &none
+&kp RU_NUMERO  &en POUND      &kp RU_EXCLAMATION  &kp RU_DOT      &kp RU_COLON             &kp RU_UNDERSCORE                  &kp RU_EQUAL    &kp RU_SEMICOLON          &kp RU_COMMA     &kp RU_QUESTION    &en CARET         &none
+&none          &en TILDE      &en AMPERSAND       &en AT_SIGN     &en SINGLE_QUOTE         &kp RU_PLUS        &none    &none  &kp RU_MINUS    &kp RU_DOUBLE_QUOTES      &en DOLLAR       &en PIPE           &en GRAVE         &none
+                              &none               &none           &none                    &mo 5              &none    &none  &none           &none                     &none            &none
             >;
         };
 
         adj {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
-&trans       &trans  &trans  &trans  &trans  &trans                    &trans        &trans        &trans            &trans        &trans        &studio_unlock
-&trans       &trans  &trans  &trans  &trans  &trans                    &out OUT_BLE  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &trans        &trans
-&trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &trans
-                     &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans            &trans
+&bootloader  &none  &none  &none  &none  &none                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL
+&none        &none  &none  &none  &none  &none                  &none         &none         &none             &none         &none         &studio_unlock
+&none        &none  &none  &none  &none  &none                  &out OUT_BLE  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &none         &none
+&none        &none  &none  &none  &none  &none  &none    &none  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &none
+                    &none  &none  &none  &none  &none    &none  &none         &none         &none             &none
             >;
 
             display-name = "Adjust";
