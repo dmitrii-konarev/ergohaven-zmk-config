@@ -92,11 +92,11 @@
 
         en {
             bindings = <
-&kp ESC     &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                           &kp N6  &kp N7      &kp N8     &kp N9    &kp N0             &kp BACKSPACE
-&kp TAB     &kp Q   &kp W     &kp E     &kp R      &kp T                            &kp Y   &kp U       &kp I      &kp O     &kp P              &kp LEFT_BRACKET
-&kp LSHIFT  &kp A   &kp S     &kp D     &kp F      &kp G                            &kp H   &kp J       &kp K      &kp L     &kp SEMI           &kp SQT
-&kp LCTRL   &kp Z   &kp X     &kp C     &kp V      &kp B   &kp C_PP     &kp C_MUTE  &kp N   &kp M       &kp COMMA  &kp DOT   &kp RIGHT_BRACKET  &kp GRAVE
-                    &kp LGUI  &kp LALT  &kp LSHFT  &mo 2   &kp SPACE    &kp ENTER   &mo 3   &kp RSHIFT  &kp FSLH   &kp BSLH
+&kp ESC     &kp N1  &kp N2    &kp N3    &kp N4         &kp N5                           &kp N6  &kp N7      &kp N8     &kp N9    &kp N0             &kp GRAVE
+&kp TAB     &kp Q   &kp W     &kp E     &kp R          &kp T                            &kp Y   &kp U       &kp I      &kp O     &kp P              &kp LEFT_BRACKET
+&kp LSHIFT  &kp A   &kp S     &kp D     &kp F          &kp G                            &kp H   &kp J       &kp K      &kp L     &kp SEMI           &kp RSHFT
+&kp LCTRL   &kp Z   &kp X     &kp C     &kp V          &kp B   &kp C_PP     &kp C_MUTE  &kp N   &kp M       &kp COMMA  &kp DOT   &kp RIGHT_BRACKET  &kp SQT
+                    &kp LGUI  &kp LALT  &kp BACKSPACE  &mo 2   &kp SPACE    &kp ENTER   &mo 3   &kp DELETE  &kp FSLH   &kp BSLH
             >;
 
             display-name = "Base";
@@ -112,11 +112,11 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp ESC    &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                          &kp N6              &kp N7                     &kp N8               &kp N9                 &kp N0                     &kp BACKSPACE
+&kp ESC    &kp N1                   &kp N2                &kp N3              &kp N4              &kp N5                                          &kp N6              &kp N7                     &kp N8               &kp N9                 &kp N0                     &kp RU_CYRILLIC_IO
 &kp TAB    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE                              &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE         &kp RU_CYRILLIC_HA
-&kp LSHFT  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                              &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE        &kp RU_CYRILLIC_E
-&kp LCTRL  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp LA(C_PP)    &kp C_MUTE  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_IO
-                                    &kp LGUI              &kp LALT            &kp LSHIFT          &mo 2               &kp SPACE       &kp ENTER   &mo 4               &kp RSHIFT                 &kp RU_DOT           &kp RU_BACKSLASH
+&kp LSHFT  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                              &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE        &kp RSHFT
+&kp LCTRL  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp LA(C_PP)    &kp C_MUTE  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_E
+                                    &kp LGUI              &kp LALT            &kp BACKSPACE       &mo 2               &kp SPACE       &kp ENTER   &mo 4               &kp DELETE                 &kp RU_DOT           &kp RU_BACKSLASH
             >;
 
             sensor-bindings =
@@ -130,11 +130,11 @@
 
         nav {
             bindings = <
-&kp F1      &kp F2    &kp F3    &kp F4     &kp F5     &kp F6                     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&kp TAB     &kp HOME  &kp UP    &kp END    &kp PG_UP  &none                      &none   &none   &none   &none    &none    &none
-&kp LCTRL   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none                      &none   &none   &none   &none    &none    &none
-&kp LSHIFT  &none     &none     &none      &none      &none   &mkp MB3    &none  &none   &none   &none   &none    &none    &none
-                      &kp LGUI  &kp LALT   &none      &none   &none       &none  &mo 5   &none   &none   &none
+&kp F1  &kp F2    &kp F3    &kp F4     &kp F5     &kp F6                      &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &none                       &none   &none   &none   &none    &none    &none
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none                       &none   &none   &none   &none    &none    &none
+&trans  &none     &none     &none      &none      &none   &mkp MB3    &none   &none   &none   &none   &none    &none    &none
+                  &trans    &trans     &trans     &none   &trans      &trans  &mo 5   &trans  &none   &none
             >;
 
             display-name = "Nav";
@@ -149,11 +149,11 @@
 
         sym_en {
             bindings = <
-&none  &none          &none             &none           &none                 &kp BACKSLASH                   &kp PERCENT  &none                  &none            &none              &none             &kp PRINTSCREEN
-&none  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK                    &kp SLASH    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
-&none  &kp POUND      &kp EXCLAMATION   &kp DOT         &kp COLON             &kp UNDERSCORE                  &kp EQUAL    &kp SEMICOLON          &kp COMMA        &kp QUESTION       &kp CARET         &none
-&none  &kp TILDE      &kp AMPERSAND     &kp AT_SIGN     &kp SINGLE_QUOTE      &kp PLUS        &none    &none  &kp MINUS    &kp DOUBLE_QUOTES      &kp DOLLAR       &kp PIPE           &kp GRAVE         &none
-                      &none             &none           &none                 &mo 5           &none    &none  &none        &none                  &none            &none
+&trans  &none          &none             &none           &none                 &kp BACKSLASH                     &kp PERCENT  &none                  &none            &none              &none             &kp PRINTSCREEN
+&trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK                      &kp SLASH    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
+&trans  &kp POUND      &kp EXCLAMATION   &kp DOT         &kp COLON             &kp UNDERSCORE                    &kp EQUAL    &kp SEMICOLON          &kp COMMA        &kp QUESTION       &kp CARET         &none
+&trans  &kp TILDE      &kp AMPERSAND     &kp AT_SIGN     &kp SINGLE_QUOTE      &kp PLUS        &none     &none   &kp MINUS    &kp DOUBLE_QUOTES      &kp DOLLAR       &kp PIPE           &kp GRAVE         &none
+                       &trans            &trans          &trans                &mo 5           &trans    &trans  &none        &trans                 &none            &none
             >;
 
             display-name = "Symbols";
@@ -162,11 +162,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&none          &none          &none               &none           &none                    &kp RU_BACKSLASH                   &kp RU_PERCENT  &none                     &none            &none              &none             &kp PRINTSCREEN
-&none          &en LESS_THAN  &en LEFT_BRACKET    &en LEFT_BRACE  &kp RU_LEFT_PARENTHESIS  &kp RU_ASTERISK                    &kp RU_SLASH    &kp RU_RIGHT_PARENTHESIS  &en RIGHT_BRACE  &en RIGHT_BRACKET  &en GREATER_THAN  &none
-&kp RU_NUMERO  &en POUND      &kp RU_EXCLAMATION  &kp RU_DOT      &kp RU_COLON             &kp RU_UNDERSCORE                  &kp RU_EQUAL    &kp RU_SEMICOLON          &kp RU_COMMA     &kp RU_QUESTION    &en CARET         &none
-&none          &en TILDE      &en AMPERSAND       &en AT_SIGN     &en SINGLE_QUOTE         &kp RU_PLUS        &none    &none  &kp RU_MINUS    &kp RU_DOUBLE_QUOTES      &en DOLLAR       &en PIPE           &en GRAVE         &none
-                              &none               &none           &none                    &mo 5              &none    &none  &none           &none                     &none            &none
+&trans  &none          &none               &none           &kp RU_NUMERO            &kp RU_BACKSLASH                     &kp RU_PERCENT  &none                     &none            &none              &none             &kp PRINTSCREEN
+&trans  &en LESS_THAN  &en LEFT_BRACKET    &en LEFT_BRACE  &kp RU_LEFT_PARENTHESIS  &kp RU_ASTERISK                      &kp RU_SLASH    &kp RU_RIGHT_PARENTHESIS  &en RIGHT_BRACE  &en RIGHT_BRACKET  &en GREATER_THAN  &none
+&trans  &en POUND      &kp RU_EXCLAMATION  &kp RU_DOT      &kp RU_COLON             &kp RU_UNDERSCORE                    &kp RU_EQUAL    &kp RU_SEMICOLON          &kp RU_COMMA     &kp RU_QUESTION    &en CARET         &none
+&trans  &en TILDE      &en AMPERSAND       &en AT_SIGN     &en SINGLE_QUOTE         &kp RU_PLUS        &none     &none   &kp RU_MINUS    &kp RU_DOUBLE_QUOTES      &en DOLLAR       &en PIPE           &en GRAVE         &none
+                       &trans              &trans          &trans                   &mo 5              &trans    &trans  &none           &trans                    &none            &none
             >;
         };
 
