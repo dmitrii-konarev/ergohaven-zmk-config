@@ -130,11 +130,11 @@
 
         nav {
             bindings = <
-&kp F1  &kp F2    &kp F3    &kp F4     &kp F5     &kp F6                            &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp CAPSLOCK                      &none   &none   &none   &none    &none    &none
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none                             &none   &none   &none   &none    &none    &none
-&trans  &none     &none     &none      &none      &none         &mkp MB3    &none   &none   &none   &none   &none    &none    &none
-                  &trans    &trans     &trans     &none         &trans      &trans  &mo 5   &trans  &none   &none
+&kp F1  &kp F2    &kp F3    &kp F4     &kp F5     &kp F6                               &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp CAPSLOCK                         &none   &none   &none   &none    &none    &none
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &kp PRINTSCREEN                      &none   &none   &none   &none    &none    &none
+&trans  &none     &none     &none      &none      &none            &mkp MB3    &none   &none   &none   &none   &none    &none    &none
+                  &trans    &trans     &trans     &none            &trans      &trans  &mo 5   &trans  &none   &none
             >;
 
             display-name = "Nav";
@@ -149,11 +149,11 @@
 
         sym_en {
             bindings = <
-&trans  &none          &none             &none           &none                 &kp BACKSLASH                     &kp PERCENT  &none                  &none            &none              &none             &kp PRINTSCREEN
-&trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK                      &kp SLASH    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
-&trans  &kp POUND      &kp EXCLAMATION   &kp DOT         &kp COLON             &kp UNDERSCORE                    &kp EQUAL    &kp SEMICOLON          &kp COMMA        &kp QUESTION       &kp CARET         &none
-&trans  &kp TILDE      &kp AMPERSAND     &kp AT_SIGN     &kp SINGLE_QUOTE      &kp PLUS        &none     &none   &kp MINUS    &kp DOUBLE_QUOTES      &kp DOLLAR       &kp PIPE           &kp GRAVE         &none
-                       &trans            &trans          &trans                &mo 5           &trans    &trans  &none        &trans                 &none            &none
+&kp F1  &kp F2         &kp F3            &kp F4          &kp F5                &kp F6                            &kp F7     &kp F8                 &kp F9           &kp F10            &kp F11           &kp F12
+&trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK                      &kp SLASH  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp BACKSLASH
+&trans  &kp POUND      &kp EXCLAMATION   &kp DOT         &kp COLON             &kp UNDERSCORE                    &kp EQUAL  &kp SEMICOLON          &kp COMMA        &kp QUESTION       &kp CARET         &kp PERCENT
+&trans  &kp TILDE      &kp AMPERSAND     &kp AT_SIGN     &kp SINGLE_QUOTE      &kp PLUS        &none     &none   &kp MINUS  &kp DOUBLE_QUOTES      &kp DOLLAR       &kp PIPE           &kp GRAVE         &none
+                       &trans            &trans          &trans                &mo 5           &trans    &trans  &none      &trans                 &none            &none
             >;
 
             display-name = "Symbols";
@@ -162,11 +162,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&trans  &none          &none               &none           &kp RU_NUMERO            &kp RU_BACKSLASH                     &kp RU_PERCENT  &none                     &none            &none              &none             &kp PRINTSCREEN
-&trans  &en LESS_THAN  &en LEFT_BRACKET    &en LEFT_BRACE  &kp RU_LEFT_PARENTHESIS  &kp RU_ASTERISK                      &kp RU_SLASH    &kp RU_RIGHT_PARENTHESIS  &en RIGHT_BRACE  &en RIGHT_BRACKET  &en GREATER_THAN  &none
-&trans  &en POUND      &kp RU_EXCLAMATION  &kp RU_DOT      &kp RU_COLON             &kp RU_UNDERSCORE                    &kp RU_EQUAL    &kp RU_SEMICOLON          &kp RU_COMMA     &kp RU_QUESTION    &en CARET         &none
-&trans  &en TILDE      &en AMPERSAND       &en AT_SIGN     &en SINGLE_QUOTE         &kp RU_PLUS        &none     &none   &kp RU_MINUS    &kp RU_DOUBLE_QUOTES      &en DOLLAR       &en PIPE           &en GRAVE         &none
-                       &trans              &trans          &trans                   &mo 5              &trans    &trans  &none           &trans                    &none            &none
+&kp F1  &kp F2         &kp F3              &kp F4          &kp F5                   &kp F6                               &kp F7        &kp F8                    &kp F9           &kp F10            &kp F11           &kp F12
+&trans  &en LESS_THAN  &en LEFT_BRACKET    &en LEFT_BRACE  &kp RU_LEFT_PARENTHESIS  &kp RU_ASTERISK                      &kp RU_SLASH  &kp RU_RIGHT_PARENTHESIS  &en RIGHT_BRACE  &en RIGHT_BRACKET  &en GREATER_THAN  &kp RU_BACKSLASH
+&trans  &en POUND      &kp RU_EXCLAMATION  &kp RU_DOT      &kp RU_COLON             &kp RU_UNDERSCORE                    &kp RU_EQUAL  &kp RU_SEMICOLON          &kp RU_COMMA     &kp RU_QUESTION    &en CARET         &kp RU_PERCENT
+&trans  &en TILDE      &en AMPERSAND       &en AT_SIGN     &en SINGLE_QUOTE         &kp RU_PLUS        &none     &none   &kp RU_MINUS  &kp RU_DOUBLE_QUOTES      &en DOLLAR       &en PIPE           &en GRAVE         &kp RU_NUMERO
+                       &trans              &trans          &trans                   &mo 5              &trans    &trans  &none         &trans                    &none            &none
             >;
         };
 
