@@ -149,11 +149,11 @@
 
         sym_en {
             bindings = <
-&kp F1  &kp F2         &kp F3            &kp F4          &kp F5                &kp F6                            &kp F7     &kp F8                 &kp F9           &kp F10            &kp F11           &kp F12
-&trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp ASTERISK                      &kp SLASH  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp BACKSLASH
-&trans  &kp POUND      &kp EXCLAMATION   &kp DOT         &kp COLON             &kp UNDERSCORE                    &kp EQUAL  &kp SEMICOLON          &kp COMMA        &kp QUESTION       &kp CARET         &kp PERCENT
-&trans  &kp TILDE      &kp AMPERSAND     &kp AT_SIGN     &kp SINGLE_QUOTE      &kp PLUS        &none     &none   &kp MINUS  &kp DOUBLE_QUOTES      &kp DOLLAR       &kp PIPE           &kp GRAVE         &none
-                       &trans            &trans          &trans                &mo 5           &trans    &trans  &none      &trans                 &none            &none
+&kp F1  &kp F2         &kp F3            &kp F4                &kp F5                 &kp F6                            &kp F7     &kp F8         &kp F9           &kp F10            &kp F11        &kp F12
+&trans  &kp GRAVE      &kp TILDE         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH                     &kp SLASH  &kp QUESTION   &kp EXCLAMATION  &kp ASTERISK       &kp PERCENT    &kp CARET
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS                         &kp PLUS   &kp COMMA      &kp DOT          &kp DOUBLE_QUOTES  &kp AMPERSAND  &kp HASH
+&trans  &kp DOLLAR     &kp AT_SIGN       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &none     &none   &kp EQUAL  &kp SEMICOLON  &kp COLON        &kp SINGLE_QUOTE   &kp PIPE       &none
+                       &trans            &trans                &trans                 &mo 5           &trans    &trans  &none      &trans         &none            &none
             >;
 
             display-name = "Symbols";
@@ -162,11 +162,11 @@
         sym_ru {
             display-name = "Symbols";
             bindings = <
-&kp F1  &kp F2         &kp F3              &kp F4          &kp F5                   &kp F6                               &kp F7        &kp F8                    &kp F9           &kp F10            &kp F11           &kp F12
-&trans  &en LESS_THAN  &en LEFT_BRACKET    &en LEFT_BRACE  &kp RU_LEFT_PARENTHESIS  &kp RU_ASTERISK                      &kp RU_SLASH  &kp RU_RIGHT_PARENTHESIS  &en RIGHT_BRACE  &en RIGHT_BRACKET  &en GREATER_THAN  &kp RU_BACKSLASH
-&trans  &en POUND      &kp RU_EXCLAMATION  &kp RU_DOT      &kp RU_COLON             &kp RU_UNDERSCORE                    &kp RU_EQUAL  &kp RU_SEMICOLON          &kp RU_COMMA     &kp RU_QUESTION    &en CARET         &kp RU_PERCENT
-&trans  &en TILDE      &en AMPERSAND       &en AT_SIGN     &en SINGLE_QUOTE         &kp RU_PLUS        &none     &none   &kp RU_MINUS  &kp RU_DOUBLE_QUOTES      &en DOLLAR       &en PIPE           &en GRAVE         &kp RU_NUMERO
-                       &trans              &trans          &trans                   &mo 5              &trans    &trans  &none         &trans                    &none            &none
+&kp F1  &kp F2         &kp F3            &kp F4                   &kp F5                    &kp F6                               &kp F7        &kp F8            &kp F9              &kp F10               &kp F11         &kp F12
+&trans  &kp GRAVE      &kp TILDE         &en LEFT_BRACKET         &kp RIGHT_BRACKET         &kp RU_BACKSLASH                     &kp RU_SLASH  &kp RU_QUESTION   &kp RU_EXCLAMATION  &kp RU_ASTERISK       &kp RU_PERCENT  &en CARET
+&trans  &en LESS_THAN  &en GREATER_THAN  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS  &kp RU_MINUS                         &kp RU_PLUS   &kp RU_COMMA      &kp RU_DOT          &kp RU_DOUBLE_QUOTES  &en AMPERSAND   &en HASH
+&trans  &en DOLLAR     &en AT_SIGN       &en LEFT_BRACE           &en RIGHT_BRACE           &kp RU_UNDERSCORE  &none     &none   &kp RU_EQUAL  &kp RU_SEMICOLON  &en RU_COLON        &en SINGLE_QUOTE      &en PIPE        &kp RU_NUMERO
+                       &trans            &trans                   &trans                    &mo 5              &trans    &trans  &none         &trans            &none               &none
             >;
         };
 
